@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: tracking-client-demo
+
+server:
+  port: 8082
+
+monitoring:
+  collector:
+    url: http://localhost:8081/api
+  rateLimit:
+    limit: 100

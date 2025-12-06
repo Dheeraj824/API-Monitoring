@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: collector-service
+  data:
+    mongodb:
+      primary:
+        uri: mongodb://localhost:27017/logs_db
+      secondary:
+        uri: mongodb://localhost:27017/metadata_db
+
+server:
+  port: 8081
+
+monitoring:
+  alert:
+    latency-threshold: 500
